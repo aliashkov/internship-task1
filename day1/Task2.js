@@ -1,5 +1,6 @@
 function arrayFirstLettersFromWords(string){
-   return string.split(' ').map( item => item[0]);
+   let newString = string.split(' ').map( item => item[0]);
+   return newString.filter(word => word.length > 0);
 }
 
 let result = arrayFirstLettersFromWords('Каждый охотник желает знать где сидит фазан');
