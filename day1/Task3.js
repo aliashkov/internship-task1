@@ -1,23 +1,10 @@
 function ChangeArray(arrayOfNumbers) {
-    let lengthArray = arrayOfNumbers.length;
-    let changedArray = [];
-    if (lengthArray === 1)
-        changedArray = arrayOfNumbers;
-    else if ((lengthArray % 2 === 0) && (lengthArray > 1)) {
-        for (let i = lengthArray / 2; i < lengthArray; i++)
-            changedArray.push(arrayOfNumbers[i]);
-        for (let i = 0; i < lengthArray / 2; i++)
-            changedArray.push(arrayOfNumbers[i]);
-    }
-    else if ((lengthArray % 2 === 1) && (lengthArray > 1)) {
-        for (let i = Math.ceil(lengthArray / 2); i < lengthArray; i++)
-            changedArray.push(arrayOfNumbers[i]);
-        changedArray.push(Math.ceil(lengthArray / 2));
-        for (let i = 0; i < Math.floor(lengthArray / 2); i++)
-            changedArray.push(arrayOfNumbers[i]);
-    }
+    let middle = Math.ceil(arrayOfNumbers.length / 2) - 1;
 
-    return changedArray;
+    if (arrayOfNumbers.length % 2 != 0)
+        return arrayOfNumbers.slice(middle + 1).concat(arrayOfNumbers[middle], arrayOfNumbers.slice(0, middle));
+    else 
+        return arrayOfNumbers.slice(middle + 1).concat(arrayOfNumbers.slice(0, middle + 1));
 }
 
 
