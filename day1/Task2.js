@@ -4,6 +4,6 @@ function insertFirstLettersFromWords(string){
 }
 
 
-let result = arrayFirstLettersFromWords('Каждый охотник желает знать где сидит фазан');
+let result = insertFirstLettersFromWords('Каждый охотник желает знать где сидит фазан');
 console.log(result);
 
