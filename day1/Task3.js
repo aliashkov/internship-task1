@@ -1,4 +1,4 @@
-function ChangeArray(arrayOfNumbers) {
+function changeArray(arrayOfNumbers) {
     let middle = Math.ceil(arrayOfNumbers.length / 2) - 1;
 
     if (arrayOfNumbers.length % 2 != 0)
@@ -8,11 +8,11 @@ function ChangeArray(arrayOfNumbers) {
 }
 
 
-let result4 = ChangeArray([1]);
+let result4 = changeArray([1]);
 console.log(result4);
-let result3 = ChangeArray([1, 2, 3, 4, 5]);
+let result3 = changeArray([1, 2, 3, 4, 5]);
 console.log(result3);
-let result = ChangeArray([1, 2]);
+let result = changeArray([1, 2]);
 console.log(result);
-let result2 = ChangeArray([1, 2, 3, 4, 5, 6, 7, 8]);
+let result2 = changeArray([1, 2, 3, 4, 5, 6, 7, 8]);
 console.log(result2);
