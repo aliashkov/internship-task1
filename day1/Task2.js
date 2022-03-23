@@ -1,6 +1,7 @@
 function insertFirstLettersFromWords(string){
-   let newString = string.split(' ').map( item => item[0]);
-   return newString.filter(word => word.length > 0);
+   let newString = [];
+   string.split(' ').filter(( char, index ) => newString[index] = char[0]);
+   return newString;
 }
 
 
